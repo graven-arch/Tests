@@ -9,6 +9,6 @@ namespace SmsGo.Models.Entities
     {
         public int Id { get; set; }
         public String Libelle_Type  { get; set; }
-        public ICollection<Utilisateur> Utilisateurs { get; set; }
+        public Utilisateur Utilisateur { get; set; }
     }
 }

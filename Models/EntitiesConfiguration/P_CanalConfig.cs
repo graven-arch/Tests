@@ -9,5 +9,11 @@ namespace SmsGo.Models.EntitiesConfiguration
 {
     public class P_CanalConfig: EntityTypeConfiguration<Param_Canal>
     {
+        public P_CanalConfig() 
+        {
+            HasKey(p => p.Id);
+            HasRequired(p => p.Utilisateur)
+                .WithMany(u => u.Param_Canals);
+        }
     }
 }

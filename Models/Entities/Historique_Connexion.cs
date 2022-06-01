@@ -8,6 +8,6 @@ namespace SmsGo.Models.Entities
     public class Historique_Connexion
     {
          public int Id_Historique { get; set; }
-        public ICollection<Utilisateur> Utilisateurs { get; set; }
+        public Utilisateur Utilisateur { get; set; }
     }
 }

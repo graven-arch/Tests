@@ -8,6 +8,10 @@ namespace SmsGo.Models.Entities
     public class Param_Canal
     {
         public int Id { get; set; }
-        public ICollection<Utilisateur> Utilisateurs { get; set; }
+        public string Libelle { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public ICollection<PlagedeNumero> PlagedeNumeros { get; set; }
+        public Utilisateur Utilisateur { get; set; }
     }
 }

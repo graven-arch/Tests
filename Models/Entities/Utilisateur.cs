@@ -13,15 +13,15 @@ namespace SmsGo.Models
         public String Password { get; set; }
         public DateTime Date_Creation { get; set; }
         public DateTime Date_Connexion { get; set; }
-        public string Profil { get; set; }
-        public Profil Profile { get; set; }
-        public  Historique_Connexion Historique_Connexion{ get; set; }
-        public param_Repertoire Param_Repertoire { get; set; }
-        public Param_Message Param_Message { get; set; }
-        public GroupeContact GroupeContact { get; set; }
-        public Param_Canal Param_Canal { get; set; }
-        public Type_Message Type_Message { get; set; }
-        public Chargement_Contact Chargement_Contact { get; set; }
+        public string Profile { get; set; }
+        public Profil Profil { get; set; }
+        public  ICollection <Historique_Connexion> Historique_Connexions{ get; set; }
+        public ICollection<param_Repertoire> Param_Repertoires { get; set; }
+        public ICollection<Param_Message> Param_Messages { get; set; }
+        public ICollection<GroupeContact> GroupeContacts { get; set; }
+        public ICollection<Param_Canal> Param_Canals { get; set; }
+        public ICollection<Type_Message> Type_Messages { get; set; }
+        public ICollection<Chargement_Contact> Chargement_Contacts { get; set; }
 
 
 

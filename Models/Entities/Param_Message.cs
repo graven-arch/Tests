@@ -10,7 +10,10 @@ namespace SmsGo.Models.Entities
         public int Id { get; set; }
         public string Libelle { get; set; }
         public DateTime Date_Envoi { get; set; }
-        public ICollection<Historique_Envoi> Historique_Envois { get; set; }
+        public Historique_Envoi Historique_Envoi { get; set; }
         public Utilisateur Utilisateur { get; set; }
+        public ICollection <GroupeContact> GroupeContacts { get; set; }
+        public ICollection<Declenchement_Message> Declenchement_Messages { get; set; }
+         
     }
 }

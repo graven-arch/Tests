@@ -9,5 +9,11 @@ namespace SmsGo.Models.EntitiesConfiguration
 {
     public class H_ConnexionConfig : EntityTypeConfiguration<Historique_Connexion>
     {
+        public H_ConnexionConfig()
+        {
+            HasKey(hc => hc.Id_Historique);
+                HasRequired(hc => hc.Utilisateur)
+                    .WithMany(u => u.Historique_Connexions);
+        }
     }
 }

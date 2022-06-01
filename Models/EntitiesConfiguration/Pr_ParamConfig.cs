@@ -9,5 +9,9 @@ namespace SmsGo.Models.EntitiesConfiguration
 {
     public class Pr_ParamConfig:EntityTypeConfiguration<Profil_Parametrage>
     {
+        public Pr_ParamConfig()
+        {
+            HasKey(prp => prp.Id_Param);
+        }
     }
 }

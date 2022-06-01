@@ -9,5 +9,9 @@ namespace SmsGo.Models.EntitiesConfiguration
 {
     public class Pr_ComConfig :EntityTypeConfiguration<Profil_Communication>
     {
+        public Pr_ComConfig()
+        {
+            HasKey(pco => pco.Id_Com);
+        }
     }
 }

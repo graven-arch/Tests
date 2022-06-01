@@ -6,13 +6,13 @@ using System.Web;
 
 namespace SmsGo.Models
 {
-    public class ProfileConfiguration: EntityTypeConfiguration<Profil>
+    public class ProfilConfiguration: EntityTypeConfiguration<Profil>
     {
-        public ProfileConfiguration()
+        public ProfilConfiguration()
         {
             HasKey(p => p.Id_Profil);
             HasMany(p => p.Utilisateurs)
-                .WithRequired(u => u.Profile);
+                .WithRequired(u => u.Profil);
         }
     }
 }

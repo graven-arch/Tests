@@ -176,11 +176,14 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BdContext.cs" />
-    <Compile Include="Models\EntitiesConfiguration\ChargementContacts_Config.cs" />
+    <Compile Include="Models\EntitiesConfiguration\ChargementContact_Config.cs" />
     <Compile Include="Models\EntitiesConfiguration\ContactConfig.cs" />
     <Compile Include="Models\EntitiesConfiguration\Declenchement_MessageConfig.cs" />
+    <Compile Include="Models\EntitiesConfiguration\Declencher_PourConfig.cs" />
     <Compile Include="Models\EntitiesConfiguration\H_ConnexionConfig.cs" />
     <Compile Include="Models\EntitiesConfiguration\H_EnvoiConfig.cs" />
+    <Compile Include="Models\EntitiesConfiguration\Message_PourConfig.cs" />
+    <Compile Include="Models\EntitiesConfiguration\PlageConfig.cs" />
     <Compile Include="Models\EntitiesConfiguration\Pr_ComConfig.cs" />
     <Compile Include="Models\EntitiesConfiguration\Pr_ExpConfig.cs" />
     <Compile Include="Models\EntitiesConfiguration\Grp_ContactConfig.cs" />
@@ -191,10 +194,12 @@
     <Compile Include="Models\EntitiesConfiguration\Type_MConfig.cs" />
     <Compile Include="Models\Entities\Contact.cs" />
     <Compile Include="Models\Entities\Declenchement_Message.cs" />
+    <Compile Include="Models\Entities\PlagedeNumero.cs" />
     <Compile Include="Models\Entities\GroupeContact.cs" />
     <Compile Include="Models\Entities\Chargement_Contact.cs" />
     <Compile Include="Models\Entities\Historique_Connexion.cs" />
     <Compile Include="Models\Entities\Historique_Envoi.cs" />
+    <Compile Include="Models\Entities\Message_Pour.cs" />
     <Compile Include="Models\Entities\Param_Canal.cs" />
     <Compile Include="Models\Entities\Param_Message.cs" />
     <Compile Include="Models\Entities\param_Repertoire.cs" />
@@ -205,7 +210,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Entities\Profil.cs" />
-    <Compile Include="Models\EntitiesConfiguration\ProfileConfiguration.cs" />
+    <Compile Include="Models\EntitiesConfiguration\ProfilConfiguration.cs" />
     <Compile Include="Models\Entities\Utilisateur.cs" />
     <Compile Include="Models\EntitiesConfiguration\UtilisateurConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

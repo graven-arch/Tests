@@ -9,5 +9,9 @@ namespace SmsGo.Models.EntitiesConfiguration
 {
     public class Pr_ExpConfig:EntityTypeConfiguration<Profil_Exploitation>
     {
+        public Pr_ExpConfig()
+        {
+            HasKey(pre => pre.Id_Exp);
+        }
     }
 }

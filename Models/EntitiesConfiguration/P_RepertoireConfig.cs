@@ -9,5 +9,11 @@ namespace SmsGo.Models.EntitiesConfiguration
 {
     public class P_RepertoireConfig: EntityTypeConfiguration<param_Repertoire>
     {
+        public P_RepertoireConfig()
+        {
+            HasKey(pr => pr.Id);
+            HasRequired(pr => pr.Utilisateur)
+                .WithMany(u => u.Param_Repertoires);
+        }
     }
 }

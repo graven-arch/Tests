@@ -7,13 +7,13 @@ using System.Web;
 
 namespace SmsGo.Models.EntitiesConfiguration
 {
-    public class Type_MConfig :EntityTypeConfiguration<Type_Message>
+    public class PlageConfig:EntityTypeConfiguration<PlagedeNumero>
     {
-        public Type_MConfig()
+        public PlageConfig()
         {
-            HasKey(t => t.Id);
-            HasRequired(t => t.Utilisateur)
-                .WithMany(u => u.Type_Messages);
+            HasKey(p => p.Id_Plage);
+            HasRequired(p => p.Param_Canal)
+                .WithMany(pa => pa.PlagedeNumeros);
         }
     }
 }
