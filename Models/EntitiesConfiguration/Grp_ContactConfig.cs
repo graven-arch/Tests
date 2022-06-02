@@ -17,10 +17,12 @@ namespace SmsGo.Models.EntitiesConfiguration
                 .WithMany(p => p.GroupeContacts);
             //config avec Utilisateur
             HasRequired(g => g.Utilisateur)
-                .WithMany(u => u.GroupeContacts);
+                .WithMany(u => u.GroupeContacts)
+                .HasForeignKey(g=>g.Id_Utilisateur);
             //Config avec Chargement_Contact
             HasRequired(g => g.Chargement_Contact)
-                .WithMany(c => c.GroupeContacts);
+                .WithMany(c => c.GroupeContacts)
+                .HasForeignKey(g=>g.Id_Chargement);
             //Config avec Contact
             HasMany(g => g.Contacts)
                 .WithRequired(co => co.GroupeContact);

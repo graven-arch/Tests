@@ -13,7 +13,8 @@ namespace SmsGo.Models
             HasKey( u=>u.Id );
             //With profil
             HasRequired(u => u.Profil)
-                .WithMany(p => p.Utilisateurs);
+                .WithMany(p => p.Utilisateurs)
+                .HasForeignKey(u=>u.Id_Profil);
             //with Historique_Connexion
             HasMany(u => u.Historique_Connexions)
                 .WithRequired(hc => hc.Utilisateur);

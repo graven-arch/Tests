@@ -12,6 +12,8 @@ namespace SmsGo.Models.Entities
         public DateTime Date_Envoi { get; set; }
         public Historique_Envoi Historique_Envoi { get; set; }
         public Utilisateur Utilisateur { get; set; }
+        public ICollection< Message_Pour>  Message_Pours{ get; set; }
+        public ICollection<DecParamMess> DecParamMess { get; set; }
         public ICollection <GroupeContact> GroupeContacts { get; set; }
         public ICollection<Declenchement_Message> Declenchement_Messages { get; set; }
          

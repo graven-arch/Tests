@@ -15,6 +15,7 @@ namespace SmsGo.Models
         public DateTime Date_Connexion { get; set; }
         public string Profile { get; set; }
         public Profil Profil { get; set; }
+        public int Id_Profil { get; set; }
         public  ICollection <Historique_Connexion> Historique_Connexions{ get; set; }
         public ICollection<param_Repertoire> Param_Repertoires { get; set; }
         public ICollection<Param_Message> Param_Messages { get; set; }

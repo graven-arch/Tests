@@ -13,7 +13,8 @@ namespace SmsGo.Models.EntitiesConfiguration
         {
             HasKey(hc => hc.Id_Historique);
                 HasRequired(hc => hc.Utilisateur)
-                    .WithMany(u => u.Historique_Connexions);
+                .WithMany(u => u.Historique_Connexions)
+                .HasForeignKey(hc=>hc.Id_Utilisateur);
         }
     }
 }

@@ -5,12 +5,12 @@ using System.Web;
 
 namespace SmsGo.Models.Entities
 {
-    public class Message_Pour
+    public class DecParamMess
     {
-        public int Id_Mess { get; set; }
+        public int Id_Dec { get; set; }
+        public int Id_D { get; set; }
+        public Declenchement_Message Declenchement_Message { get; set; }
         public int Id { get; set; }
         public Param_Message Param_Message { get; set; }
-        public int Id_Groupe { get; set; }
-        public GroupeContact GroupeContact { get; set; }
     }
 }
