@@ -9,11 +9,5 @@ namespace SmsGo.Models.EntitiesConfiguration
 {
     public class Declenchement_MessageConfig : EntityTypeConfiguration<Declenchement_Message>
     {
-        public Declenchement_MessageConfig()
-        {
-            HasKey(d => d.Id_D);
-            HasMany(d => d.Param_Messages)
-                .WithMany(p => p.Declenchement_Messages);
-        }
     }
 }

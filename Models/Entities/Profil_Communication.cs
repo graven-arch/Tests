@@ -5,9 +5,8 @@ using System.Web;
 
 namespace SmsGo.Models.Entities
 {
-    public class Param_Canal
+    public class Profil_Communication : Profil 
     {
-        public int Id { get; set; }
-        public ICollection<Utilisateur> Utilisateurs { get; set; }
+        public int Id_Com { get; set; }
     }
 }

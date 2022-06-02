@@ -11,32 +11,31 @@ namespace SmsGo.Models
        public UtilisateurConfiguration()
         {
             HasKey( u=>u.Id );
-            //With profil
-            HasRequired(u => u.Profil)
+            //Profile
+            HasRequired(u => u.Profile)
                 .WithMany(p => p.Utilisateurs)
                 .HasForeignKey(u=>u.Id_Profil);
-            //with Historique_Connexion
+            //Historiqueconn
             HasMany(u => u.Historique_Connexions)
                 .WithRequired(hc => hc.Utilisateur);
-            //With Param_Repertoire
-            HasMany(u => u.Param_Repertoires)
-                .WithRequired(pr => pr.Utilisateur);
-            //With Param_Canal
-            HasMany(u => u.Param_Canals)
-                .WithRequired(pc => pc.Utilisateur);
-            //With Groupe_Contact
-            HasMany(u => u.GroupeContacts)
-                .WithRequired(g => g.Utilisateur);
-            //With Param_Message
-            HasMany(u => u.Param_Messages)
-                .WithRequired(pm => pm.Utilisateur);
-            //With Chargement_Contact
-            HasMany(u => u.Chargement_Contacts)
-                .WithRequired(c => c.Utilisateur);
-            //With Type_Message
+            //Type Message
             HasMany(u => u.Type_Messages)
                 .WithRequired(t => t.Utilisateur);
-            
+            //Chargement Contact
+            HasMany(u => u.Chargement_Contacts)
+                .WithRequired(c => c.Utilisateur);
+            //Param message
+            HasMany(u => u.Param_Messages)
+                .WithRequired(pm => pm.Utilisateur);
+            //Groupe contact
+            HasMany(u => u.GroupeContacts)
+                .WithRequired(g => g.Utilisateur);
+            //Param canal
+            HasMany(u => u.Param_Canals)
+                .WithRequired(pc => pc.Utilisateur);
+            //Param Repertoire
+            HasMany(u => u.Param_Repertoires)
+                .WithRequired(pr => pr.Utilisateur);
         }
     }
 }

@@ -11,6 +11,6 @@ namespace SmsGo.Models.Entities
         public string Chemin_Repertoire { get; set; }
         public string Nom_Repertoire { get; set; }
         public DateTime Date_Modification { get; set; }
-        public Utilisateur Utilisateur { get; set; }
+        public ICollection<Utilisateur> Utilisateurs { get; set; }
     }
 }

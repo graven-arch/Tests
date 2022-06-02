@@ -7,10 +7,10 @@ namespace SmsGo.Models.Entities
 {
     public class Historique_Envoi
     {
-        public int Id_HistoriqueEnvoi { get; set; }
+        public int Id_HistoriqueMessage { get; set; }
         public DateTime Date_Verification { get; set; }
         public int Destinataire { get; set; }
         public string Contenu { get; set; }
-        public ICollection<Param_Message> Param_Messages { get; set; }
+        public Param_Message Param_Message { get; set; }
     }
 }

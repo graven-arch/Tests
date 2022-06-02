@@ -9,12 +9,6 @@ namespace SmsGo.Models.EntitiesConfiguration
 {
     public class Type_MConfig :EntityTypeConfiguration<Type_Message>
     {
-        public Type_MConfig()
-        {
-            HasKey(t => t.Id);
-            HasRequired(t => t.Utilisateur)
-                .WithMany(u => u.Type_Messages)
-                .HasForeignKey(t=>t.Id_Utilisateur);
-        }
+
     }
 }

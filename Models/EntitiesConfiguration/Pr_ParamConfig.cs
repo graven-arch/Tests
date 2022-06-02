@@ -7,7 +7,7 @@ using SmsGo.Models.Entities;
 
 namespace SmsGo.Models.EntitiesConfiguration
 {
-    public class P_CanalConfig: EntityTypeConfiguration<Param_Canal>
+    public class Pr_ParamConfig:EntityTypeConfiguration<Profil_Parametrage>
     {
     }
 }

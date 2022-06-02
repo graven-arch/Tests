@@ -11,8 +11,7 @@ namespace SmsGo.Models.Entities
         public DateTime Date_Chargement { get; set; }
         public string Format_fichier { get; set; }
         public string Nom_Fichier { get; set; }
-        public int Id_Utilisateur { get; set; }
-        public Utilisateur Utilisateur { get; set; }
-        public ICollection<GroupeContact> GroupeContacts { get; set; }
+        public ICollection<Utilisateur> Utilisateurs { get; set; }
+        public GroupeContact GroupeContact { get; set; }
     }
 }
